@@ -1,0 +1,29 @@
+{
+  "name": "@sae-dapp/monorepo",
+  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "workspaces",
+    "yarn"
+  ],
+  "private": true,
+  "scripts": {
+    "solidity": "yarn workspace @project/solidity",
+    "solidity:compile": "yarn workspace @project/solidity compile",
+    "react-app": "yarn workspace @project/react-app",
+    "react-app:build": "yarn workspace @project/react-app build",
+    "react-app:eject": "yarn workspace @project/react-app eject",
+    "react-app:start": "yarn workspace @project/react-app start",
+    "react-app:test": "yarn workspace @project/react-app test",
+    "frock-dapp-simple": "yarn workspace @project/frock-dapp-simple",
+    "frock-dapp-simple:start": "yarn workspace @project/frock-dapp-simple start"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "hardhat-deploy-ethers": "^0.3.0-beta.13"
+  }
+}

@@ -1,0 +1,1530 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "txHash": "0x34572b49094ea74e096609c0fee5f0aca1e4bc6e61014147fd005ca608006dbd",
+      "kind": "uups"
+    },
+    {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0xcf4bfdb6d57a1d47463d06fcef6af56def353dd82f0d0a8878ef76cde64c7253",
+      "kind": "uups"
+    },
+    {
+      "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+      "txHash": "0x092ff1552becc27e7a0b7250c3d0d9f62e611284aac439846967ac922e9c8ba4",
+      "kind": "uups"
+    },
+    {
+      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+      "txHash": "0xb29ba430bbaa35d16f190397ac449800e9e73d04705430ffedbe88659809b2d0",
+      "kind": "uups"
+    },
+    {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0x4301ddc802e6b2a332a8bb1b6de085112ebc3885eaf42725b32764eba127b85e",
+      "kind": "uups"
+    },
+    {
+      "address": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+      "txHash": "0xccfc57384729139b62321e3c6bc88dc5ad03274fca8955db4bf58cb69b0da4c5",
+      "kind": "uups"
+    },
+    {
+      "address": "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
+      "txHash": "0xcc4eb64953000bf805a0b6f76b74e6e6ebc0b41be39ced2274e77ec86afe0553",
+      "kind": "uups"
+    },
+    {
+      "address": "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318",
+      "txHash": "0xfdeef4972a7cca394ffee8ac12eb047682bcbd480288150490db1219227c3671",
+      "kind": "uups"
+    },
+    {
+      "address": "0x610178dA211FEF7D417bC0e6FeD39F05609AD788",
+      "txHash": "0xfaad17603f59a9df2c9df2efea9ca7ef391c9f8555bf6c04dec4d577e2957dda",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "96473c82a43c88967ce95765b0fe03232c58c2cd0f85b18cd69debff52bfb6b9": {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0xe0ff8540fbc3e9c59c26886e84cb40b732ea17ab7b6fe87b0f0cc41a66b14ea4",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_bool",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:102"
+          },
+          {
+            "label": "_token",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_contract(IERC20)1256",
+            "contract": "SaeStakingV1",
+            "src": "contracts/SaeStakingV1.sol:20"
+          },
+          {
+            "label": "_payouts",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_mapping(t_bytes32,t_mapping(t_address,t_struct(Payout)1627_storage))",
+            "contract": "SaeStakingV1",
+            "src": "contracts/SaeStakingV1.sol:43"
+          },
+          {
+            "label": "_existingPayouts",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "contract": "SaeStakingV1",
+            "src": "contracts/SaeStakingV1.sol:44"
+          },
+          {
+            "label": "_investors",
+            "offset": 0,
+            "slot": "254",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SaeStakingV1",
+            "src": "contracts/SaeStakingV1.sol:68"
+          },
+          {
+            "label": "_investorMapping",
+            "offset": 0,
+            "slot": "255",
+            "type": "t_mapping(t_address,t_struct(Investor)1667_storage)",
+            "contract": "SaeStakingV1",
+            "src": "contracts/SaeStakingV1.sol:69"
+          },
+          {
+            "label": "_investorIndex",
+            "offset": 0,
+            "slot": "256",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "SaeStakingV1",
+            "src": "contracts/SaeStakingV1.sol:70"
+          },
+          {
+            "label": "_tempInvestors",
+            "offset": 0,
+            "slot": "257",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "SaeStakingV1",
+            "src": "contracts/SaeStakingV1.sol:310"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC20)1256": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_enum(DivestmentCurrency)1641": {
+            "label": "enum SaeStakingV1.DivestmentCurrency",
+            "members": [
+              "DAG",
+              "FTM"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(Investor)1667_storage)": {
+            "label": "mapping(address => struct SaeStakingV1.Investor)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(Payout)1627_storage)": {
+            "label": "mapping(address => struct SaeStakingV1.Payout)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_mapping(t_address,t_struct(Payout)1627_storage))": {
+            "label": "mapping(bytes32 => mapping(address => struct SaeStakingV1.Payout))",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Investor)1667_storage": {
+            "label": "struct SaeStakingV1.Investor",
+            "members": [
+              {
+                "label": "investorAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "investorSaeAddress",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "saeRewardBalance",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "saeDepositBalance",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "ftmRewardBalance",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "ftmDepositBalance",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isCompound",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "divestmentCurrency",
+                "type": "t_enum(DivestmentCurrency)1641",
+                "offset": 1,
+                "slot": "6"
+              },
+              {
+                "label": "isDivesting",
+                "type": "t_bool",
+                "offset": 2,
+                "slot": "6"
+              },
+              {
+                "label": "saeDivestmentBalance",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "ftmDivestmentBalance",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "monthlyRewardPercentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              }
+            ],
+            "numberOfBytes": "320"
+          },
+          "t_struct(Payout)1627_storage": {
+            "label": "struct SaeStakingV1.Payout",
+            "members": [
+              {
+                "label": "isValue",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "saeRewardBalance",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "saeDivestmentBalance",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "investorSaeAddress",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "attributedRewardPercentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "monthlyRewardPercentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "87b9457870b3e07542ac487e7273a71e0ca1682971008a2da73df6ea33355a1a": {
+      "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+      "txHash": "0x73ca607e283d2f09b1033671c31536202efa181918ed4ce4d8bbdbca778f944f",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_bool",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:102"
+          },
+          {
+            "label": "_token",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_contract(IERC20)1256",
+            "contract": "SaeFtmStakingV1",
+            "src": "contracts/SaeFtmStakingV1.sol:21"
+          },
+          {
+            "label": "_nft",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_contract(IERC721)1372",
+            "contract": "SaeFtmStakingV1",
+            "src": "contracts/SaeFtmStakingV1.sol:22"
+          },
+          {
+            "label": "_payouts",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_mapping(t_bytes32,t_array(t_struct(Transaction)2486_storage)dyn_storage)",
+            "contract": "SaeFtmStakingV1",
+            "src": "contracts/SaeFtmStakingV1.sol:34"
+          },
+          {
+            "label": "_existingTransactions",
+            "offset": 0,
+            "slot": "254",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "contract": "SaeFtmStakingV1",
+            "src": "contracts/SaeFtmStakingV1.sol:35"
+          },
+          {
+            "label": "_nftValueIds",
+            "offset": 0,
+            "slot": "255",
+            "type": "t_array(t_uint256)dyn_storage",
+            "contract": "SaeFtmStakingV1",
+            "src": "contracts/SaeFtmStakingV1.sol:37"
+          },
+          {
+            "label": "_nftValueMap",
+            "offset": 0,
+            "slot": "256",
+            "type": "t_mapping(t_uint256,t_struct(NftValue)2507_storage)",
+            "contract": "SaeFtmStakingV1",
+            "src": "contracts/SaeFtmStakingV1.sol:38"
+          },
+          {
+            "label": "_investorMap",
+            "offset": 0,
+            "slot": "257",
+            "type": "t_mapping(t_address,t_struct(Investor)2518_storage)",
+            "contract": "SaeFtmStakingV1",
+            "src": "contracts/SaeFtmStakingV1.sol:40"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Transaction)2486_storage)dyn_storage": {
+            "label": "struct SaeStakingTypes.Transaction[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC20)1256": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC721)1372": {
+            "label": "contract IERC721",
+            "numberOfBytes": "20"
+          },
+          "t_enum(NftStatus)2461": {
+            "label": "enum SaeStakingTypes.NftStatus",
+            "members": [
+              "ACTIVE",
+              "BURNED",
+              "BURNING_NEXT_PROCESS"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_enum(NftStrategy)2465": {
+            "label": "enum SaeStakingTypes.NftStrategy",
+            "members": [
+              "COMPOUND",
+              "DIVEST",
+              "CLAIM_REWARDS"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(Investor)2518_storage)": {
+            "label": "mapping(address => struct SaeStakingTypes.Investor)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_array(t_struct(Transaction)2486_storage)dyn_storage)": {
+            "label": "mapping(bytes32 => struct SaeStakingTypes.Transaction[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(NftValue)2507_storage)": {
+            "label": "mapping(uint256 => struct SaeStakingTypes.NftValue)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Investor)2518_storage": {
+            "label": "struct SaeStakingTypes.Investor",
+            "members": [
+              {
+                "label": "ftmReward",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "ftmDeposit",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "ftmDivestment",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "isCompound",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(NftValue)2507_storage": {
+            "label": "struct SaeStakingTypes.NftValue",
+            "members": [
+              {
+                "label": "nftId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "nftOwner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "saeReward",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "saeDeposit",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "saeDivestment",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "isCompound",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isDivesting",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "5"
+              },
+              {
+                "label": "isTransferred",
+                "type": "t_bool",
+                "offset": 2,
+                "slot": "5"
+              },
+              {
+                "label": "isBurned",
+                "type": "t_bool",
+                "offset": 3,
+                "slot": "5"
+              },
+              {
+                "label": "monthlyRewardPercentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          },
+          "t_struct(Transaction)2486_storage": {
+            "label": "struct SaeStakingTypes.Transaction",
+            "members": [
+              {
+                "label": "nftId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "investorAddr",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool",
+                "offset": 20,
+                "slot": "1"
+              },
+              {
+                "label": "saeDeposit",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "saeRewardsThisPeriod",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "periodId",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "nftStatus",
+                "type": "t_enum(NftStatus)2461",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "nftStrategy",
+                "type": "t_enum(NftStrategy)2465",
+                "offset": 1,
+                "slot": "5"
+              },
+              {
+                "label": "accrue",
+                "type": "t_bool",
+                "offset": 2,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "8d27c4a398435182bd9b0c81832c83b1a4f0ef1ce0cff17a26a436605f8c32f3": {
+      "address": "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318",
+      "txHash": "0x5f7e5506869b8118c9760810f318aec0c5823cb6b28a87a56728e634457ecd30",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_token",
+            "type": "t_contract(IERC20)2017",
+            "src": "contracts/SaeFtmStakingV1.sol:27"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_nft",
+            "type": "t_contract(ISaeNft)4333",
+            "src": "contracts/SaeFtmStakingV1.sol:28"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_tokenAddress",
+            "type": "t_address",
+            "src": "contracts/SaeFtmStakingV1.sol:30"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_nftAddress",
+            "type": "t_address",
+            "src": "contracts/SaeFtmStakingV1.sol:31"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_payouts",
+            "type": "t_mapping(t_bytes32,t_array(t_struct(Transaction)6896_storage)dyn_storage)",
+            "src": "contracts/SaeFtmStakingV1.sol:46"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_existingTransactions",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts/SaeFtmStakingV1.sol:47"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_nftValueIds",
+            "type": "t_array(t_uint256)dyn_storage",
+            "src": "contracts/SaeFtmStakingV1.sol:49"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_nftValueMap",
+            "type": "t_mapping(t_uint256,t_struct(NftValue)6933_storage)",
+            "src": "contracts/SaeFtmStakingV1.sol:50"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_pendingInvestorList",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "contracts/SaeFtmStakingV1.sol:52"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_pendingInvestorIndex",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/SaeFtmStakingV1.sol:53"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_investorMap",
+            "type": "t_mapping(t_address,t_struct(Investor)6955_storage)",
+            "src": "contracts/SaeFtmStakingV1.sol:55"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20)2017": {
+            "label": "contract IERC20"
+          },
+          "t_contract(ISaeNft)4333": {
+            "label": "contract ISaeNft"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_bytes32,t_array(t_struct(Transaction)6896_storage)dyn_storage)": {
+            "label": "mapping(bytes32 => struct SaeStakingTypes.Transaction[])"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_array(t_struct(Transaction)6896_storage)dyn_storage": {
+            "label": "struct SaeStakingTypes.Transaction[]"
+          },
+          "t_struct(Transaction)6896_storage": {
+            "label": "struct SaeStakingTypes.Transaction",
+            "members": [
+              {
+                "label": "nftId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "investorAddr",
+                "type": "t_address"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              },
+              {
+                "label": "saeBalance",
+                "type": "t_uint256"
+              },
+              {
+                "label": "saeDivestment",
+                "type": "t_uint256"
+              },
+              {
+                "label": "saeRewardsThisPeriod",
+                "type": "t_uint256"
+              },
+              {
+                "label": "divestmentTokenType",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "periodId",
+                "type": "t_bytes32"
+              },
+              {
+                "label": "nftStatus",
+                "type": "t_enum(NftStatus)6865"
+              },
+              {
+                "label": "nftStrategy",
+                "type": "t_enum(NftStrategy)6869"
+              },
+              {
+                "label": "accrue",
+                "type": "t_bool"
+              },
+              {
+                "label": "createdTimestamp",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_enum(NftStatus)6865": {
+            "label": "enum SaeStakingTypes.NftStatus",
+            "members": [
+              "ACTIVE",
+              "BURNED",
+              "BURNING_NEXT_PROCESS"
+            ]
+          },
+          "t_enum(NftStrategy)6869": {
+            "label": "enum SaeStakingTypes.NftStrategy",
+            "members": [
+              "COMPOUND",
+              "DIVEST",
+              "CLAIM_REWARDS"
+            ]
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_mapping(t_uint256,t_struct(NftValue)6933_storage)": {
+            "label": "mapping(uint256 => struct SaeStakingTypes.NftValue)"
+          },
+          "t_struct(NftValue)6933_storage": {
+            "label": "struct SaeStakingTypes.NftValue",
+            "members": [
+              {
+                "label": "nftId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "nftOwner",
+                "type": "t_address"
+              },
+              {
+                "label": "initialDepositTokenAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "initialDepositTokenType",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "usdInitialDeposit",
+                "type": "t_uint256"
+              },
+              {
+                "label": "saeReward",
+                "type": "t_uint256"
+              },
+              {
+                "label": "saeBalance",
+                "type": "t_uint256"
+              },
+              {
+                "label": "saeDivestment",
+                "type": "t_uint256"
+              },
+              {
+                "label": "divestmentTokenType",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "isCompound",
+                "type": "t_bool"
+              },
+              {
+                "label": "isDivesting",
+                "type": "t_bool"
+              },
+              {
+                "label": "isTransferred",
+                "type": "t_bool"
+              },
+              {
+                "label": "isBurned",
+                "type": "t_bool"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              },
+              {
+                "label": "monthlyRewardPercentage",
+                "type": "t_uint256"
+              },
+              {
+                "label": "purchaseTimestamp",
+                "type": "t_uint256"
+              },
+              {
+                "label": "history",
+                "type": "t_array(t_struct(Activity)6861_storage)dyn_storage"
+              }
+            ]
+          },
+          "t_array(t_struct(Activity)6861_storage)dyn_storage": {
+            "label": "struct SaeStakingTypes.Activity[]"
+          },
+          "t_struct(Activity)6861_storage": {
+            "label": "struct SaeStakingTypes.Activity",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256"
+              },
+              {
+                "label": "activity",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "mutation",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_struct(Investor)6955_storage)": {
+            "label": "mapping(address => struct SaeStakingTypes.Investor)"
+          },
+          "t_struct(Investor)6955_storage": {
+            "label": "struct SaeStakingTypes.Investor",
+            "members": [
+              {
+                "label": "depositTokenAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "depositTokenType",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "usdInitialDeposit",
+                "type": "t_uint256"
+              },
+              {
+                "label": "ftmReward",
+                "type": "t_uint256"
+              },
+              {
+                "label": "divestmentTokenAmount",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)"
+              },
+              {
+                "label": "burnedNftIds",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "purchaseTimestamp",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isCompound",
+                "type": "t_bool"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    },
+    "45bf24130d7eb3f6a64013029eb5ae772471f8e1a8ce60ce364b9e3ed089a97c": {
+      "address": "0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e",
+      "txHash": "0x67b809c94ae13c564d9b22155b4e8c8fc4dd3b5f673e8aec1a6b807cc1b0c092",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:102"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_token",
+            "type": "t_contract(IERC20)2017",
+            "src": "contracts/SaeFtmStakingV1.sol:27"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_nft",
+            "type": "t_contract(ISaeNft)4333",
+            "src": "contracts/SaeFtmStakingV1.sol:28"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_tokenAddress",
+            "type": "t_address",
+            "src": "contracts/SaeFtmStakingV1.sol:30"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_nftAddress",
+            "type": "t_address",
+            "src": "contracts/SaeFtmStakingV1.sol:31"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_payouts",
+            "type": "t_mapping(t_bytes32,t_array(t_struct(Transaction)6896_storage)dyn_storage)",
+            "src": "contracts/SaeFtmStakingV1.sol:46"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_existingTransactions",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts/SaeFtmStakingV1.sol:47"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_nftValueIds",
+            "type": "t_array(t_uint256)dyn_storage",
+            "src": "contracts/SaeFtmStakingV1.sol:49"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_nftValueMap",
+            "type": "t_mapping(t_uint256,t_struct(NftValue)6933_storage)",
+            "src": "contracts/SaeFtmStakingV1.sol:50"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_pendingInvestorList",
+            "type": "t_array(t_address)dyn_storage",
+            "src": "contracts/SaeFtmStakingV1.sol:52"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_pendingInvestorIndex",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/SaeFtmStakingV1.sol:53"
+          },
+          {
+            "contract": "SaeFtmStakingV1",
+            "label": "_investorMap",
+            "type": "t_mapping(t_address,t_struct(Investor)6955_storage)",
+            "src": "contracts/SaeFtmStakingV1.sol:55"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20)2017": {
+            "label": "contract IERC20"
+          },
+          "t_contract(ISaeNft)4333": {
+            "label": "contract ISaeNft"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_bytes32,t_array(t_struct(Transaction)6896_storage)dyn_storage)": {
+            "label": "mapping(bytes32 => struct SaeStakingTypes.Transaction[])"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_array(t_struct(Transaction)6896_storage)dyn_storage": {
+            "label": "struct SaeStakingTypes.Transaction[]"
+          },
+          "t_struct(Transaction)6896_storage": {
+            "label": "struct SaeStakingTypes.Transaction",
+            "members": [
+              {
+                "label": "nftId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "investorAddr",
+                "type": "t_address"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              },
+              {
+                "label": "saeBalance",
+                "type": "t_uint256"
+              },
+              {
+                "label": "saeDivestment",
+                "type": "t_uint256"
+              },
+              {
+                "label": "saeRewardsThisPeriod",
+                "type": "t_uint256"
+              },
+              {
+                "label": "divestmentTokenType",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "periodId",
+                "type": "t_bytes32"
+              },
+              {
+                "label": "nftStatus",
+                "type": "t_enum(NftStatus)6865"
+              },
+              {
+                "label": "nftStrategy",
+                "type": "t_enum(NftStrategy)6869"
+              },
+              {
+                "label": "accrue",
+                "type": "t_bool"
+              },
+              {
+                "label": "createdTimestamp",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_enum(NftStatus)6865": {
+            "label": "enum SaeStakingTypes.NftStatus",
+            "members": [
+              "ACTIVE",
+              "BURNED",
+              "BURNING_NEXT_PROCESS"
+            ]
+          },
+          "t_enum(NftStrategy)6869": {
+            "label": "enum SaeStakingTypes.NftStrategy",
+            "members": [
+              "COMPOUND",
+              "DIVEST",
+              "CLAIM_REWARDS"
+            ]
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]"
+          },
+          "t_mapping(t_uint256,t_struct(NftValue)6933_storage)": {
+            "label": "mapping(uint256 => struct SaeStakingTypes.NftValue)"
+          },
+          "t_struct(NftValue)6933_storage": {
+            "label": "struct SaeStakingTypes.NftValue",
+            "members": [
+              {
+                "label": "nftId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "nftOwner",
+                "type": "t_address"
+              },
+              {
+                "label": "initialDepositTokenAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "initialDepositTokenType",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "usdInitialDeposit",
+                "type": "t_uint256"
+              },
+              {
+                "label": "saeReward",
+                "type": "t_uint256"
+              },
+              {
+                "label": "saeBalance",
+                "type": "t_uint256"
+              },
+              {
+                "label": "saeDivestment",
+                "type": "t_uint256"
+              },
+              {
+                "label": "divestmentTokenType",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "isCompound",
+                "type": "t_bool"
+              },
+              {
+                "label": "isDivesting",
+                "type": "t_bool"
+              },
+              {
+                "label": "isTransferred",
+                "type": "t_bool"
+              },
+              {
+                "label": "isBurned",
+                "type": "t_bool"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              },
+              {
+                "label": "monthlyRewardPercentage",
+                "type": "t_uint256"
+              },
+              {
+                "label": "purchaseTimestamp",
+                "type": "t_uint256"
+              },
+              {
+                "label": "history",
+                "type": "t_array(t_struct(Activity)6861_storage)dyn_storage"
+              }
+            ]
+          },
+          "t_array(t_struct(Activity)6861_storage)dyn_storage": {
+            "label": "struct SaeStakingTypes.Activity[]"
+          },
+          "t_struct(Activity)6861_storage": {
+            "label": "struct SaeStakingTypes.Activity",
+            "members": [
+              {
+                "label": "timestamp",
+                "type": "t_uint256"
+              },
+              {
+                "label": "activity",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "mutation",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_struct(Investor)6955_storage)": {
+            "label": "mapping(address => struct SaeStakingTypes.Investor)"
+          },
+          "t_struct(Investor)6955_storage": {
+            "label": "struct SaeStakingTypes.Investor",
+            "members": [
+              {
+                "label": "depositTokenAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "depositTokenType",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "usdInitialDeposit",
+                "type": "t_uint256"
+              },
+              {
+                "label": "ftmReward",
+                "type": "t_uint256"
+              },
+              {
+                "label": "divestmentTokenAmount",
+                "type": "t_mapping(t_string_memory_ptr,t_uint256)"
+              },
+              {
+                "label": "burnedNftIds",
+                "type": "t_array(t_uint256)dyn_storage"
+              },
+              {
+                "label": "purchaseTimestamp",
+                "type": "t_uint256"
+              },
+              {
+                "label": "isCompound",
+                "type": "t_bool"
+              },
+              {
+                "label": "isValue",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_mapping(t_string_memory_ptr,t_uint256)": {
+            "label": "mapping(string => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        }
+      }
+    }
+  }
+}
